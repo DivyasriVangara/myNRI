@@ -1,4 +1,4 @@
-# 📚 Attendance Monitoring System
+# 📚MyNRI - Attendance Monitoring System
 
 ## 📌 What is an Attendance Monitoring System?
 
