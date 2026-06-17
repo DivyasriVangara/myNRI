@@ -1,5 +1,11 @@
 # 📚 Attendance Monitoring System
 
+## 📌 What is an Attendance Monitoring System?
+
+An Attendance Monitoring System is a digital platform designed to record, manage, and track student attendance efficiently. It provides students with easy access to their attendance information while enabling faculty and administrators to maintain attendance records accurately.
+
+The system helps improve transparency, reduces manual work, and allows students to monitor their attendance status regularly. By providing real-time attendance information, it helps students stay informed and avoid falling below the required attendance percentage.
+
 ## 🎯 Why do we need an Attendance Monitoring System?
 
 In our university, students usually know their attendance only when faculty informs them or during attendance review. Sometimes students may not know whether they are below the required attendance percentage until it becomes a problem.
