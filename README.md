@@ -62,11 +62,12 @@ From the technical side, the system should:
 
 The Attendance Monitoring System will help students monitor their attendance easily and help faculty maintain attendance records efficiently. It provides a simple and transparent way of managing attendance information within the university.
 
-| Views | Why AMS? | Positives & Negatives | Name of Student |
-|--------|----------|----------------------|----------------|
-| Student View | Content | --- | Divya Sri |
-| Faculty View | From a faculty perspective(view), manual attendance takes valuable class time in every period. There is a chance of errors while calling roll numbers, marking attendance, and maintaining records. Proxy attendance and mistakes in attendance calculations can also be occur. Faculty members need to spend extra time on maintaining registers, calculating attendance percentages manually, and identifying students with low attendance.
- | An Attendance Monitoring System reduces the manual work, time and also percentage calculations. It maintains the records digitally so that we can search, access, and manage them easily. And the system depends on internet connection and server availability. Technical issues, system failures, or restarts can temporarily affect attendance marking. So, regular monitoring and maintainance also needed.
- | Swathi |
-| Administrative View | Content | --- | Tejaswi |
-| Technical View | Content | --- | Tejaswi |
+## Why do we Need an Attendance Monitoring System? ( In Different Perspectives)
+This section explains the need for an Attendance Monitoring System (AMS) from different perspectives, including students, faculty, administration, and technical management. Each perspective highlights the challenges of manual attendance and the benefits of a digital attendance system.
+
+| Views | Student View | Faculty View | Administrative View | Technical View |
+|--------|-------------|-------------|---------------------|---------------|
+| Why AMS? | Content |  From a faculty perspective(view), manual attendance takes valuable class time in every period. There is a chance of errors while calling roll numbers, marking attendance, and maintaining records. Proxy attendance and mistakes in attendance calculations can also be occur. Faculty members need to spend extra time on maintaining registers, calculating attendance percentages manually, and identifying students with low attendance. | Content | Content |
+| Positives | --- | An Attendance Monitoring System reduces the manual work, time and also percentage calculations. It maintains the records digitally so that we can search, access, and manage them easily. | --- | --- |
+| Negatives | --- | And the disadvantage is the system depends on internet connection and server availability. Technical issues, system failures, or restarts can temporarily affect attendance marking. So, regular monitoring and maintainance also needed. | --- | --- |
+| Name of Student | Divya Sri | Swathi | Tejaswi | Tejaswi |
