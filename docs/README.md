@@ -1,4 +1,6 @@
-## Project Files
+# Docs
+
+## Contents
 
 - [Functional Requirements](functional_requirements.md)
 - [Late Comers Handling](late_comers.md)
