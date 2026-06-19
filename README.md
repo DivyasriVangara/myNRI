@@ -75,3 +75,10 @@ This section explains the need for an Attendance Monitoring System (AMS) from di
 ### Preventing Proxy Attendance
 
 One challenge in any attendance system is proxy attendance, where one student marks attendance on behalf of another student. To reduce this issue, the system can use methods such as QR-code based attendance, OTP verification, or faculty verification. These methods help ensure that attendance is marked only by the student who is actually present in the class.
+## 📚 Documentation
+
+- [Documentation](documentation/README.md)
+- [Student Functional Requirements](documentation/Student_Functional_Requirements.md)
+- [Login with Biometric Verification](documentation/Login_With_Biometric_Verification.md)
+  ---
+**Prepared By:** Divya Sri
