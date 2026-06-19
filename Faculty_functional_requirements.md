@@ -1,16 +1,31 @@
-FUNCTIONAL REQUIREMENTS – FACULTY VIEW
+**FUNCTIONAL REQUIREMENTS – FACULTY VIEW**
 
-- Generate QR code for each class session  
-- Start and stop attendance session  
-- Auto mark attendance using QR scan  
-- Store attendance data in system database  
-- View real-time attendance status  
-- View present and absent students list  
-- Calculate attendance percentage automatically  
-- Handle late arrival requests  
-- Verify late entries from dashboard  
-- Generate attendance reports  
-- Maintain attendance history digitally  
-- Reduce manual attendance marking  
-- Reduce phone calls for absentees  
-- Reduce overall faculty workload
+• Generate a QR code for each class session.
+
+• Start and stop the attendance session when required.
+
+• Mark student attendance automatically through QR code scanning.
+
+• Store attendance records in the system database.
+
+• View attendance status in real time.
+
+• Check the list of present and absent students.
+
+• Calculate student attendance percentage automatically.
+
+• Receive late arrival requests from students.
+
+• Verify and approve or reject late attendance requests.
+
+• Generate attendance reports whenever needed.
+
+• Maintain attendance records digitally for future reference.
+
+• Reduce the need for manual attendance marking.
+
+• Save time in tracking absent students.
+
+• Reduce the overall workload of faculty members.
+
+• Improve the accuracy and efficiency of attendance management.
