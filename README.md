@@ -86,9 +86,9 @@ One challenge in any attendance system is proxy attendance, where one student ma
 
 ## Contents
 
-- [Functional Requirements](Faculty_functional_requirements.md)
-- [Late Comers Handling](late_comers.md)
-- [ER Diagram](er_diagram.png)
+- [Faculty Functional Requirements](docs/Faculty_functional_requirements.md)
+- [Late Comers Handling](docs/late_comers.md)
+- [ER Diagram](docs/er_diagram.png)
 
 **Prepared By**: Swathi
 
