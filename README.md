@@ -90,5 +90,5 @@ One challenge in any attendance system is proxy attendance, where one student ma
 - [Late Comers Handling](late_comers.md)
 - [ER Diagram](er_diagram.png)
 
-Prepared By: Swathi
+**Prepared By**: Swathi
 
