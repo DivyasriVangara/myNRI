@@ -2,8 +2,8 @@
 
 ## Contents
 
-- [Functional Requirements](functional_requirements.md)
-- [Late Comers Handling](late_comers.md)
-- [ER Diagram](er_diagram.png)
+- [Functional Requirements](docs/Faculty_functional_requirements.md)
+- [Late Comers Handling](docs/late_comers.md)
+- [ER Diagram](docs/er_diagram.png)
 
 **Prepared By**: Swathi
