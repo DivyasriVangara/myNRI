@@ -80,7 +80,7 @@ Identify Entities, Attributes and Realationships
 * Attendance_Percentage_Range
 
 ## Relationships
-### srudent -> Attendence
+### student -> Attendence
 * One Student can have many Attendance records.
 * One Attendance record belongs to one Student.
 **Cardinality:** 1 : M
