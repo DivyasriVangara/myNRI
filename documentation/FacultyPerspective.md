@@ -166,7 +166,7 @@ Stores student, faculty, and attendance records.
 **Scanner:** Web camera-based scanning (JavaScripgit addt: html5-qrcode)
 
 
-## Authentication & Security
+## Authentication & Securitys
 * JWT (JSON Web Token) for login sessions
 * Password encryption (bcrypt)
 
