@@ -1,9 +1,5 @@
-# Docs
+## Faculty Perspective
 
-## Contents
-
-- [Functional Requirements](docs/Faculty_functional_requirements.md)
-- [Late Comers Handling](docs/late_comers.md)
-- [ER Diagram](docs/er_diagram.png)
+- [Faculty](documentation/FacultyPerspective.md)
 
 **Prepared By**: Swathi
