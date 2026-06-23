@@ -1,4 +1,4 @@
-## WHY WE NEED ATTENDANCE MONITORING SYSTEM FROM FACULTY PERSPECTIVE:
+# Why we need Attendance Monitoring System from Faculty Perspective?
 
  **Key Points:**
 - Maintain classroom discipline.
@@ -6,7 +6,8 @@
 - Reduce faculty workload (attendance, phone calls, records,).
 
 
-## What are the Functional Requirements
+
+# What are the Functional Requirements?
 
 **General Requirements**
 -   Faculty should be able to login easily and securely
@@ -26,7 +27,7 @@
 -   Faculty should be able to Take head count during qr scanning
 
 
-**Late Commers Attendence Management**
+- Late Commers Attendence Management  
 -   Ability to access location information while logging in attendence (only for late commers)
 -   Ability to check the late entries after the class (only for that respective start and end time of the period on that day)
 
@@ -47,60 +48,61 @@
 
 
 
-## How do we achive AMS?
+
+# How do we achive AMS?
 Identify Entities, Attributes and Realationships
 ## Entities and Attributes
 
 ### 1. Faculty
-Faculty_ID (PK)
-Faculty_Name
-Dept
-Email
-Phone
+- Faculty_ID (PK)
+- Faculty_Name
+- Dept
+- Email
+- Phone
 
 ### 2.Student
-Student_ID (PK)
-Student_Name
-Roll_No
-Dept
-Section
-Year
-Phone
-Age
+- Student_ID (PK)
+- Student_Name
+- Roll_No
+- Dept
+- Section
+- Year
+- Phone
+- Age
 
 ### 3. QR_Session
-Session_ID (PK)
-Class/Subject
-Date
-Start_Time
-End_Time
-Status
+- Session_ID (PK)
+- Class/Subject
+- Date
+- Start_Time
+- End_Time
+- Status
 
 ### 4. Attendance
-Attendance_ID (PK)
-Date
-Period
-Timestamp
-Status (Present / Late / Absent)
+- Attendance_ID (PK)
+- Date
+- Period
+- Timestamp
+- Status (Present / Late / Absent)
 
 ### 5. Late_Arrival
-Request_ID (PK)
-Arrival_Time
-Reason
-Status (Pending / Approved / Rejected)
+- Request_ID (PK)
+- Arrival_Time
+- Reason
+- Status (Pending / Approved / Rejected)
 
 ### 6. Attendance_Report
-R_ID (PK)
-Date
-Total_Students
-Present_Count
-Attendance_Percentage
+- Report_ID (PK)
+- Date
+- Total_Students
+- Present_Count
+- Attendance_Percentage
 
 ### 7. Administrative
-Admin_ID (PK)
-Admin_Name
-Email
-Role
+- Admin_ID (PK)
+- Admin_Name
+- Email
+- Role
 
 
 ## Relationships
@@ -187,26 +189,6 @@ QR_SESSION
 ADMIN
 
 
-### Sample call button
+
+## Sample call button
 ![alt text](image.png)
-
-
-# Pros and cons for AMS from Faculty Perspective: 
-## Pros (Faculty Perspective)
-- Maintains better classroom discipline through secure attendance verification.
-- Reduces faculty time spent on taking attendance manually.
-- Minimizes manual effort in tracking absent and late students.
-- Provides quick communication with absentees using one-tap calling(communicate module).
-- Stores accurate attendance records for future monitoring and reports.
-
-## Cons (Faculty Perspective)
-- Requires stable internet connectivity during attendance sessions.
-- Initial student registration takes additional setup time.
-- Technical issues may affect the attendance process temporarily.
-- Students need smart phones for biometric authentication and QR scanning.
-- Faculty must learn how to use the system(like QR generation,monitoring attendance,handling absentees) 
-before using it in real classes
-
-
-### Faculty_QR_Session
-![alt text](image-1.png)
