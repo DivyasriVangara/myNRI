@@ -213,4 +213,4 @@ before using it in real classes
 
 
 ### Faculty_QR_Session
-![alt text](image-1.png)
+<img width="951" height="990" alt="image" src="https://github.com/user-attachments/assets/563d9514-e9b9-409f-ba13-6c06d27cd371" />
