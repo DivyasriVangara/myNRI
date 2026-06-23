@@ -8,30 +8,30 @@
 
 ## What are the Functional Requirements
 
-General Requirements
+**General Requirements**
 -   Faculty should be able to login easily and securely
 -   Faculty should have accessss to student details of that class
 -   Faculty should be able to start attendance for each period separately
 
 
-Attendance Session Creation(QR generation)
+**Attendance Session Creation(QR generation)**
 -   Faculty should be able to create an attendance session for every class period
 -   System should automatically generate a QR code for that session using particulars(sessionID,class,sub,period,year,classID...)
 -   QR code should work only for that limited time of 2 minuutes(start and end time )
 
 
-Live Attendance Monitoring
+**Live Attendance Monitoring**
 -   Faculty should be able to see live attendance while students are scanning QR
 -   Present, late, and absent count should update automatically
 -   Faculty should be able to Take head count during qr scanning
 
 
-- Late Commers Attendence Management  
+**Late Commers Attendence Management**
 -   Ability to access location information while logging in attendence (only for late commers)
 -   Ability to check the late entries after the class (only for that respective start and end time of the period on that day)
 
 
-Absentee Tracking
+**Absentee Tracking**
 -   After session ends, system should automatically show absent students
 -   It should remove students who are present and who have permission for leave
 -   Only real absentees should be listed 
@@ -39,7 +39,7 @@ Absentee Tracking
 -   There should be a direct call option, especially for students who are frequently absent or without permission
 
 
-Reports and Records
+**Reports and Records**
 -   Faculty should be able to view daily and monthly attendance
 -   System should generate reports automatically
 -   Attendance data should be exportable through (PDF/Excel)
@@ -166,7 +166,7 @@ Stores student, faculty, and attendance records.
 **Scanner:** Web camera-based scanning (JavaScripgit addt: html5-qrcode)
 
 
-## Authentication & Securitys
+## Authentication & Securities
 * JWT (JSON Web Token) for login sessions
 * Password encryption (bcrypt)
 
@@ -189,3 +189,24 @@ ADMIN
 
 ### Sample call button
 ![alt text](image.png)
+
+
+# Pros and cons for AMS from Faculty Perspective: 
+## Pros (Faculty Perspective)
+- Maintains better classroom discipline through secure attendance verification.
+- Reduces faculty time spent on taking attendance manually.
+- Minimizes manual effort in tracking absent and late students.
+- Provides quick communication with absentees using one-tap calling(communicate module).
+- Stores accurate attendance records for future monitoring and reports.
+
+## Cons (Faculty Perspective)
+- Requires stable internet connectivity during attendance sessions.
+- Initial student registration takes additional setup time.
+- Technical issues may affect the attendance process temporarily.
+- Students need smart phones for biometric authentication and QR scanning.
+- Faculty must learn how to use the system(like QR generation,monitoring attendance,handling absentees) 
+before using it in real classes
+
+
+### Faculty_QR_Session
+![alt text](image-1.png)
