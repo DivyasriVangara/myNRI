@@ -213,4 +213,5 @@ before using it in real classes
 
 
 ### Faculty_QR_Session
+[QR Session](documentation/faculty_view/Faculty_QR_Module/index.html)
 <img width="951" height="990" alt="image" src="https://github.com/user-attachments/assets/563d9514-e9b9-409f-ba13-6c06d27cd371" />
