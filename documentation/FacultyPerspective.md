@@ -192,9 +192,6 @@ ADMIN
 
 
 
-## Sample call button
-![alt text](image.png)
-
 
 
 # Pros and cons for Browser/App from Faculty Perspective: 
@@ -252,11 +249,11 @@ flowchart TD
 
 A[Faculty Login] --> B[Faculty Dashboard Opens]
 
-B --> C[Input: Faculty Details (Name, Subject, Section)]
+B --> C[Input: Faculty Details Name, Subject, Section]
 
 C --> D[Generate QR Session Click]
 
-D --> E[QR Generated & Active (2 min)]
+D --> E[QR Generated & Active for 2 min]
 E --> F[QR Refresh Every 30 seconds]
 
 F --> G[Students Scan QR]
