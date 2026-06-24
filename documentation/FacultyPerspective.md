@@ -36,6 +36,8 @@ General Requirements
 -   After session ends, system should automatically show absent students
 -   It should remove students who are present and who have permission for leave
 -   Only real absentees should be listed 
+-   Students who submitted a permission request and received faculty approval should be listed under "With Permission".
+-   Students who are absent without approval should be listed under "Without Permission".
 -   Faculty should be able to see student phone no and parent phone no if they need to contact them. 
 -   There should be a direct call option, especially for students who are frequently absent or without permission
 
@@ -195,22 +197,95 @@ ADMIN
 
 
 
-# Pros and cons for AMS from Faculty Perspective: 
-## Pros (Faculty Perspective)
-- Maintains better classroom discipline through secure attendance verification.
-- Reduces faculty time spent on taking attendance manually.
-- Minimizes manual effort in tracking absent and late students.
-- Provides quick communication with absentees using one-tap calling(communicate module).
-- Stores accurate attendance records for future monitoring and reports.
+# Pros and cons for Browser/App from Faculty Perspective: 
+## Browser-Based AMS
+### Pros
+- No app installation is required for students and faculty.
+- Easy QR session generation and attendance access using browser.
+- Works on Android, iPhone, and laptops with a single website.
+- Easy permission request and attendance management through dashboard.
+- One-tap calling and call status can be managed from faculty dashboard.
+- Easy to maintain and update
+- Lower development and deployment cost.
 
-## Cons (Faculty Perspective)
-- Requires stable internet connectivity during attendance sessions.
-- Initial student registration takes additional setup time.
-- Technical issues may affect the attendance process temporarily.
-- Students need smart phones for biometric authentication and QR scanning.
-- Faculty must learn how to use the system(like QR generation,monitoring attendance,handling absentees) 
-before using it in real classes
+### Cons
+- Internet connection is required during attendance sessions.
+- Students must open the website before scanning the QR.
+- Browser performance may vary on different devices.
+- Some browser features depend on device and browser support.
+- Performance may reduce with poor network connectivity.
+
+## Mobile App-Based AMS
+### Pros
+- Faster access after one-time installation.
+- Better integration with fingerprint authentication.
+- Smoother user experience for regular attendance.
+- Easy access to notifications and attendance updates.
+- Better performance with device hardware integration.
+
+### Cons
+- Every student and faculty must install the application.
+- App updates are required whenever new features are added.
+- Publishing and maintaining the app requires additional effort.
+- Development and testing are more complex.
+- App Store and Play Store deployment may involve extra process and cost.
 
 
 ### Faculty_QR_Session
 ![alt text](image-1.png)
+
+## POC-Faculty Perspective(one page view)
+
+![alt text](image.png)
+- The Proof of Concept demonstrates the Faculty Dashboard workflow of the Attendance Monitoring System. 
+- The faculty logs into the dashboard and generates a dynamic QR session that refreshes every 30 seconds and expires after 2 minutes. 
+- Students scan the QR and complete authentication, after which their responses appear on the faculty dashboard. 
+- The system displays the total present and absent students. 
+- Absentees are categorized into "With Permission" and "Without Permission". 
+- Faculty can directly contact students without permission using the Call button. 
+- After returning from the call, the faculty records the call status for future reference.
+- This POC demonstrates the complete faculty workflow using a single-page dashboard.
+
+## Functional diagram using
+```mermaid
+flowchart TD
+
+A[Faculty Login] --> B[Faculty Dashboard Opens]
+
+B --> C[Input: Faculty Details (Name, Subject, Section)]
+
+C --> D[Generate QR Session Click]
+
+D --> E[QR Generated & Active (2 min)]
+E --> F[QR Refresh Every 30 seconds]
+
+F --> G[Students Scan QR]
+
+G --> H[Input: Student Authentication Data]
+
+H --> I[Live Student Responses]
+
+I --> J[Process Attendance Data]
+
+J --> K[Output: Present Count]
+J --> L[Output: Absent Count]
+
+L --> M[Categorize Absentees]
+
+M --> N[With Permission Students]
+M --> O[Without Permission Students]
+
+N --> P[View Only Details]
+
+O --> Q[Student Contact Info Display]
+
+Q --> R[Call Student Button]
+
+R --> S[Call Status Popup]
+S --> T[Save Call Status]
+
+T --> U[Final Attendance Record Stored]
+
+U --> V[Faculty Logout]
+```
+

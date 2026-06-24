@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Dashboard - AMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Attendance Monitoring System</h1>
+
+<h2>Faculty Dashboard</h2>
+
+<div class="faculty-info">
+<p><b>Faculty:</b> Swathi</p>
+<p><b>Subject:</b> DBMS</p>
+<p><b>Section:</b> CSE-A</p>
+</div>
+
+<button id="generateQR">Generate QR Session</button>
+
+<div id="qrcode">
+QR will appear here
+</div>
+
+<h3 id="timer">02:00</h3>
+
+<hr>
+
+<h3>Live Responses</h3>
+
+<button onclick="addStudent()">Add Student Response</button>
+
+<ul id="responseList">
+
+</ul>
+
+<hr>
+
+<div class="summary">
+
+<h3>Present : <span id="present">0</span></h3>
+
+<h3>Absent : <span id="absent">60</span></h3>
+
+</div>
+
+<hr>
+
+<button onclick="showPermission('with')">
+With Permission
+</button>
+
+<button onclick="showPermission('without')">
+Without Permission
+</button>
+
+<div id="permissionArea">
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
