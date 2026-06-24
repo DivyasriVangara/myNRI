@@ -182,3 +182,46 @@ we need to discuss about the technical stack?
 * Netlify (Frontend)
 * Render / Railway (Backend)
 * GitHub (Version Control)
+
+```mermaid
+flowchart TD
+
+    A[Student Opens AMS Website]
+    B[Firebase Login - Email and Password]
+    C[Student Dashboard Loads - Attendance Percentage and History]
+    D[Mark Attendance - Camera Permission Requested]
+    E[QR Code Scanned - html5-qrcode Reads Data]
+    F[Validate QR in Firestore - Check Session ID and Expiry]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+
+    F -->|QR Expired| X[QR Expired]
+    X --> D
+
+    F --> G[Fingerprint Verification using WebAuthn]
+
+    G -->|Authentication Failed| Y[Authentication Failed]
+    Y --> G
+
+    G -->|Authentication Success| H{Student On Time}
+
+    H -->|Yes| I[Attendance Recorded]
+    I --> J[Attendance Saved to Firestore]
+    J --> K[Confirmation Shown]
+
+    H -->|No - Student Late| L[Late Arrival Detected]
+    L --> M[Faculty Notified]
+    M --> N[Faculty Reviews Student]
+
+    N -->|Approved| O[Manual Attendance Marked]
+    O --> P[Attendance Saved to Firestore]
+    P --> Q[Late Attendance Confirmation]
+
+    N -->|Rejected| R[Attendance Rejected]
+    R --> S[Student Notified]
+
+```
