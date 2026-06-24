@@ -246,7 +246,7 @@ ADMIN
 - After returning from the call, the faculty records the call status for future reference.
 - This POC demonstrates the complete faculty workflow using a single-page dashboard.
 
-## Functional diagram using
+## Functional diagram
 ```mermaid
 flowchart TD
 

@@ -82,13 +82,9 @@ One challenge in any attendance system is proxy attendance, where one student ma
 - [Login with Biometric Verification](documentation/Login_With_Biometric_Verification.md)
   ---
 **Prepared By:** Divya Sri
-# Docs
 
-## Contents
 
-- [Faculty Functional Requirements](docs/Faculty_functional_requirements.md)
-- [Late Comers Handling](docs/late_comers.md)
-- [ER Diagram](docs/er_diagram.png)
 
-**Prepared By**: Swathi
+**Name**: Swathi
+- [Faculty](documentation/FacultyPerspective.md)
 
