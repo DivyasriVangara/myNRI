@@ -144,3 +144,15 @@
 - bcrypt
 - Role-Based Access Control (RBAC)
 - Audit Logs
+
+
+# SQL vs NoSQL — 5 Major Differences Based on Your App Features
+
+| # | Your Feature | SQL Behavior | NoSQL Behavior |
+|---|--------------|-------------|----------------|
+| 1 | QR Attendance | Store token in a table; manual expiry logic is needed | TTL index automatically deletes QR after 30 seconds natively |
+| 2 | Biometric + Location | Separate tables for fingerprint, face, and require complex joins | A single document stores biometric data, location, and timestamp together |
+| 3 | Live Monitoring | Requires polling or additional tools for real-time updates | MongoDB Change Streams provide instant live updates |
+| 4 | Automatic Timetable | Fixed schema makes changes difficult when timetable structure changes | Flexible documents allow adding periods, holidays, and subjects anytime |
+| 5 | Calling Absentees + Permission | Multiple joins are needed to fetch student details, permissions, and call logs | A single document contains student details, permissions, and call status |
+
