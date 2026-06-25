@@ -146,9 +146,9 @@
 - Audit Logs
 
 
-# SQL vs NoSQL — 5 Major Differences Based on Your App Features
+# SQL vs NoSQL — 5 Major Differences Based on App Features
 
-| # | Your Feature | SQL Behavior | NoSQL Behavior |
+| # | Feature | SQL | NoSQL |
 |---|--------------|-------------|----------------|
 | 1 | QR Attendance | Store token in a table; manual expiry logic is needed | TTL index automatically deletes QR after 30 seconds natively |
 | 2 | Biometric + Location | Separate tables for fingerprint, face, and require complex joins | A single document stores biometric data, location, and timestamp together |
