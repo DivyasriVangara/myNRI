@@ -156,3 +156,65 @@
 | 4 | Automatic Timetable | Fixed schema makes changes difficult when timetable structure changes | Flexible documents allow adding periods, holidays, and subjects anytime |
 | 5 | Calling Absentees + Permission | Multiple joins are needed to fetch student details, permissions, and call logs | A single document contains student details, permissions, and call status |
 
+# Flow chart in all aspects
+```mermaid
+flowchart TD
+
+A[Admin Web Portal] --> B[Configure Master Data]
+
+B --> C[Add / Update Students]
+C --> D[Add / Update Faculty]
+D --> E[Add / Update Subjects]
+E --> F[Add / Update Classrooms]
+F --> G[Generate / Update Timetable]
+
+G --> H[Store Data in Database]
+
+H --> I[Faculty Application]
+H --> J[Student Application]
+
+I --> K[Faculty Starts Attendance]
+K --> L[Generate Secure QR Code]
+
+J --> M[Student Scans QR]
+
+L --> N[Attendance Verification]
+M --> N
+
+N --> O[Face Verification]
+O --> P[Fingerprint Verification]
+P --> Q[Location Verification]
+
+Q --> R{Verification Successful?}
+
+R -->|Yes| S[Store Attendance Record]
+R -->|No| T[Reject Attendance]
+
+S --> U[Monthly Permission Limit Check]
+U --> V[Timetable Conflict Detection]
+V --> W[Attendance Analytics]
+W --> X[Automatic Report Generation]
+
+X --> Y[Admin Dashboard]
+
+Y --> Z[View Statistics]
+Z --> Z1[Total Students Registered]
+Z1 --> Z2[Total Faculty Registered]
+Z2 --> Z3[Pending Permissions]
+Z3 --> Z4[Attendance Reports]
+Z4 --> Z5[Notifications]
+```
+
+## Main Features of the System
+
+- All academic and administrative data can be managed directly through the Admin Website without changing the source code.
+- Administrators can add, update, or delete students, faculty, subjects, classrooms, departments, and notifications dynamically.
+- The system automatically generates and updates timetables based on faculty, subjects, and classroom availability.
+- Faculty members are automatically assigned to classes and subjects through the admin portal.
+- Secure attendance is recorded using QR Code, Face Recognition, Fingerprint Verification, and Location Verification.
+- Faculty can start attendance sessions, monitor attendance status, and approve or reject student permission requests.
+- Students can view timetables, attendance records, notifications, and request permissions through the mobile application.
+- The system automatically checks monthly permission limits and disables the permission option after the allowed limit is reached.
+- Real-time notifications and pop-up alerts are provided for pending attendance, timetable changes, permissions, and important announcements.
+- Attendance reports, analytics, and statistics are automatically generated for administrators and faculty.
+```
