@@ -1,0 +1,30 @@
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f97316;
+    color:white;
+    padding:15px 30px;
+    border-radius:12px;
+    margin:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.logo h2{
+    margin:0;
+    font-size:28px;
+}
+
+.logo span{
+    font-size:14px;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.profile-icon{
+    font-size:45px;
+}

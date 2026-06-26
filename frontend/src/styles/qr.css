@@ -1,0 +1,76 @@
+.qr-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px;
+}
+
+/* TOP SECTION */
+.top-section {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-top: 4px solid #f97316;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* CENTER BUTTON */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* BUTTON */
+.btn {
+  padding: 12px 20px;
+  background: #f97316;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* QR SECTION CENTER */
+.qr-center {
+  text-align: center;
+}
+
+/* QR BOX */
+.qr-box {
+  margin: 15px auto;
+  padding: 40px;
+  background: #fff7ed;
+  border: 1 px solid #eee;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+/* LIVE SCAN */
+.scan-live {
+  margin-top: 10px;
+  padding: 10px;
+  background: #dcfce7;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* GREEN BUTTON */
+.green {
+  background: green;
+  margin-top: 10px;
+}

@@ -1,0 +1,24 @@
+.header {
+  background: linear-gradient(135deg, #f97316, #f97316);
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 12px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.session-info {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  background: rgba(255,255,255,0.2);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
