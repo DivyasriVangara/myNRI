@@ -158,51 +158,62 @@
 
 # Flow chart in all aspects
 ```mermaid
-flowchart TD
+flowchart TB
 
-A[Admin Web Portal] --> B[Configure Master Data]
+    AY[ACADEMIC_YEAR]
+    AC[ACADEMIC_CALENDAR]
 
-B --> C[Add / Update Students]
-C --> D[Add / Update Faculty]
-D --> E[Add / Update Subjects]
-E --> F[Add / Update Classrooms]
-F --> G[Generate / Update Timetable]
+    D[DEPARTMENT]
 
-G --> H[Store Data in Database]
+    F[FACULTY]
+    S[SUBJECT]
+    SEC[SECTION]
 
-H --> I[Faculty Application]
-H --> J[Student Application]
+    ST[STUDENT]
 
-I --> K[Faculty Starts Attendance]
-K --> L[Generate Secure QR Code]
+    TT[TIMETABLE]
 
-J --> M[Student Scans QR]
+    AS[ATTENDANCE_SESSION]
+    SA[STUDENT_ATTENDANCE]
 
-L --> N[Attendance Verification]
-M --> N
+    LR[LEAVE_REQUEST]
 
-N --> O[Face Verification]
-O --> P[Fingerprint Verification]
-P --> Q[Location Verification]
+    A[ADMIN]
+    N[NOTIFICATION]
 
-Q --> R{Verification Successful?}
+    %% Academic
+    AY -->|has| AC
 
-R -->|Yes| S[Store Attendance Record]
-R -->|No| T[Reject Attendance]
+    %% Department
+    D -->|has| F
+    D -->|has| S
+    D -->|has| SEC
 
-S --> U[Monthly Permission Limit Check]
-U --> V[Timetable Conflict Detection]
-V --> W[Attendance Analytics]
-W --> X[Automatic Report Generation]
+    %% Faculty relations
+    F -->|teaches| S
+    F -->|handles| SEC
 
-X --> Y[Admin Dashboard]
+    %% Student
+    SEC -->|contains| ST
 
-Y --> Z[View Statistics]
-Z --> Z1[Total Students Registered]
-Z1 --> Z2[Total Faculty Registered]
-Z2 --> Z3[Pending Permissions]
-Z3 --> Z4[Attendance Reports]
-Z4 --> Z5[Notifications]
+    %% Timetable
+    F -->|assigned to| TT
+    S -->|included in| TT
+    SEC -->|scheduled for| TT
+
+    %% Attendance
+    F -->|creates| AS
+    S -->|for| AS
+    SEC -->|conducted for| AS
+
+    AS -->|records| SA
+    ST -->|marks| SA
+
+    %% Leave
+    ST -->|submits| LR
+
+    %% Notification
+    A -->|sends| N
 ```
 
 ## Main Features of the System
@@ -217,4 +228,56 @@ Z4 --> Z5[Notifications]
 - The system automatically checks monthly permission limits and disables the permission option after the allowed limit is reached.
 - Real-time notifications and pop-up alerts are provided for pending attendance, timetable changes, permissions, and important announcements.
 - Attendance reports, analytics, and statistics are automatically generated for administrators and faculty.
+
+28-6-2026
+
+-The relationship between faulty and student and what is the work flow is the task i have done today below i am going to share step by step process of workflow
+
+```mermaid
+flowchart TB
+
+A[Admin Opens AMS Website]
+A --> B[Firebase Authentication]
+B --> C{Existing Admin?}
+
+C -->|Yes| D[Login]
+C -->|No| E[Register]
+
+E --> F[Verify Email]
+F --> D
+
+D --> G[Admin Dashboard]
+
+%% Main Modules
+
+G --> H[Academic Management]
+G --> I[Student Management]
+G --> J[Faculty Management]
+G --> K[Attendance Monitoring]
+G --> L[Reports]
+
+%% Academic
+
+H --> H1[Departments]
+H --> H2[Subjects]
+
+%% Student
+
+I --> I1[Add Students]
+I --> I2[Import Students]
+
+%% Faculty
+
+J --> J1[Add Faculty]
+J --> J2[Assign Subjects]
+
+%% Attendance
+
+K --> K1[Live Sessions]
+K --> K2[QR Status]
+
+%% Reports
+
+L --> L1[Daily Reports]
+L --> L2[Student Reports]
 ```
