@@ -287,3 +287,107 @@ T --> U[Final Attendance Record Stored]
 U --> V[Faculty Logout]
 ```
 
+### 1) Login 
+```mermaid
+flowchart TD
+A[Open Browser] --> B[Open AMS Website]
+B --> C[Enter Username and Password]
+C --> D{Credentials Valid?}
+D -->|Yes| E[Login Successful]
+E --> F{Role Check}
+F -->|Faculty| G[Faculty Dashboard]
+F -->|Student| H[Student Dashboard]
+D -->|No| I[Show Invalid Credentials]
+I --> C
+```
+
+### 2) QR Attendance Flow
+```mermaid
+flowchart TD
+A[Faculty Login] --> B[Generate QR Session]
+B --> C[Display QR]
+C --> D[Student Scans QR]
+D --> E{QR Session Active?}
+E -->|Yes| F{Student Registered?}
+F -->|Yes| G{Already Marked Attendance?}
+G -->|No| H[Mark Present]
+H --> I[Store Attendance]
+I --> J[Attendance Success]
+G -->|Yes| K[Show Already Marked]
+F -->|No| L[Access Denied]
+E -->|No| M[Show QR Expired]
+```
+
+### 3) Permission Request flow
+
+```mermaid
+flowchart TD
+A[Student Login] --> B[Permission Request]
+B --> C[Enter Reason]
+C --> D{Reason Entered?}
+D -->|Yes| E[Submit Request]
+E --> F[Store in Firebase]
+F --> G[Faculty Views Request]
+G --> H{Approve Request?}
+H -->|Yes| I[Permission Approved]
+I --> J[Notify Student]
+H -->|No| K[Permission Rejected]
+K --> J
+D -->|No| L[Show Error Message]
+L --> C
+```
+
+### 4) Late Arrival REquest flow
+```mermaid
+flowchart TD
+A[Student Login] --> B[Late Arrival Request]
+B --> C[Enter Reason]
+
+C --> D{Reason Valid?}
+
+D -->|Yes| E[Submit Request]
+
+E --> F[Store Request]
+
+F --> G[Faculty Views Request]
+
+G --> H{Approve?}
+
+H -->|Yes| I[Late Arrival Approved]
+
+I --> J[Notify Student]
+
+H -->|No| K[Late Arrival Rejected]
+
+K --> J
+
+D -->|No| L[Show Validation Error]
+
+L --> C
+```
+
+### 5) Parent Calling Module
+```mermaid
+flowchart TD
+A[Faculty Dashboard] --> B[Absent Without Permission List]
+
+B --> C[Click Call Button]
+
+C --> D[Phone Dialer Opens]
+
+D --> E{Call Connected?}
+
+E -->|Yes| F[Parent Contacted]
+
+E -->|No| G[Call Failed]
+
+F --> H[Show Call Status Popup]
+
+G --> H
+
+H --> I[Store Call Status]
+```
+
+
+
+
