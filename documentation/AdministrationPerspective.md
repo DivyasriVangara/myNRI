@@ -281,3 +281,28 @@ K --> K2[QR Status]
 L --> L1[Daily Reports]
 L --> L2[Student Reports]
 ```
+
+
+------------------------------------------------------------------------------------------------------------------
+
+29-06-2026
+
+------------------------------------------------------------------------------------------------------------------
+
+| Collection | Document | Fields |
+|------------|----------|--------|
+| students | studentId | studentId, rollNumber, name, email, phone, gender, departmentId, sectionId, academicYearId, parentContact, attendancePercentage, status, createdAt(to know when the document was created it is optional purpose only) |
+| faculty | facultyId | facultyId, name, email, phone, designation, departmentId, assignedSubjects, assignedSections, status, createdAt |
+| departments | departmentId | departmentId, departmentName, description, createdAt |
+| sections | sectionId | sectionId, sectionName, departmentId, academicYearId, classAdvisorId, studentCount, createdAt |
+| subjects | subjectId | subjectId, subjectName, subjectCode, departmentId, semester, credits, facultyId, createdAt |
+| academicYears | academicYearId | academicYearId, yearName, startDate, endDate, status |
+| academicCalendar | eventId | eventId, academicYearId, eventName, eventType, startDate, endDate, description |
+| timetables | timetableId | timetableId, sectionId, day, period, subjectId, facultyId, startTime, endTime, roomNumber |
+| attendanceSessions | sessionId | sessionId, facultyId, subjectId, sectionId, sessionDate, period, qrCode, qrExpiryTime, status, presentCount, absentCount |
+| studentAttendance | attendanceId | attendanceId, studentId, sessionId, status, markedTime, method, isLate |
+| notifications | notificationId | notificationId, title, message, targetType, targetId, createdAt, isRead |
+```
+
+- In our system, notifications are planned to improve communication between students and faculty. Notifications can be sent to all students, all faculty members, or to individual students and teachers whenever required. For example, common announcements can be sent to everyone, while attendance alerts or important updates can be sent to specific students or faculty members. just iI thought it could be nice .
+
