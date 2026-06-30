@@ -391,6 +391,10 @@ H --> I[Store Call Status]
 ### three phases
 Frontend contains all faculty-facing screens such as login, dashboard, timetable, attendance overview, permission requests, late requests, absent student monitoring, and call tracker. Backend handles authentication, QR generation, attendance validation, permission approval, late request processing, and call tracking. Firebase database stores user information, attendance records, permission requests, late arrival requests, and call logs. Together these three layers provide a centralized faculty discipline and attendance management system.
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/54557fc2-559d-40a9-b8ed-46cb72a47aa7" />
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/8612c373-d6d2-4979-bc3f-a32765d9d51e" />
+
 
 
 
