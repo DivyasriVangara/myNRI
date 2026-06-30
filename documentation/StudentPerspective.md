@@ -225,3 +225,7 @@ flowchart TD
     R --> S[Student Notified]
 
 ```
+
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/9ce61385-15bb-4e61-91c1-bbe413d655c4" />
+
