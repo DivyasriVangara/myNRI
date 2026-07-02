@@ -306,3 +306,12 @@ L --> L2[Student Reports]
 
 - In our system, notifications are planned to improve communication between students and faculty. Notifications can be sent to all students, all faculty members, or to individual students and teachers whenever required. For example, common announcements can be sent to everyone, while attendance alerts or important updates can be sent to specific students or faculty members. just iI thought it could be nice .
 
+Collections
+Regulation
+{id:"NRIA25",RegulationName:"NRIA25", RegulationCode:"NRIA25",branches:{CSE:{sem1:subject}}semesters:{1:} }
+
+Regulation (NRIA25CSE, NRIA25CSM)
+Branches 5 branches
+Semester 2 semester
+Subjects 6 per sem
+Sections 3 per sem
